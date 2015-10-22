@@ -1,0 +1,313 @@
+/********************************
+*          Base
+********************************/
+html, body {
+    margin: 0; 
+    padding: 0;
+    
+    font-size: 14px;
+    color: #333;
+    
+    background-color: #eee;
+}
+h1 {
+    display: block;
+    font-size: 2.5em;
+    margin: 0;
+}
+h2 {
+    display: block;
+    font-size: 2.3em;
+    color: purple;
+    margin: 0;
+}
+h3 {
+    display: block;
+    font-size: 1.8em;
+    margin: 0;
+}
+h4 {
+    display: block;
+    font-size: 1.3em;
+    margin: 0;
+    color: #4a3c35;
+    
+}
+h5 {
+    display: block;
+    font-size: 1.1em;
+    margin: 0;
+    
+}
+h6 {
+    display: block;
+    font-size: 1.1em;
+    margin: 0;
+    
+}
+a {
+    color: red
+}
+a:hover {
+    color: purple;
+    text-decoration: none;
+}
+.clear{clear: both}
+
+.date {
+    color: purple
+}
+/********************************
+*          layout
+********************************/
+.ls-header {
+    position: fixed;
+    top:0;
+    z-index: 1;
+    width: 100%;
+    
+    height:80px;
+
+    margin-bottom: 20px;
+    padding: 10px;
+    
+    
+    text-align: center;
+    
+    background-color: purple;
+    color: #eee;
+}
+
+.ls-nav {
+    width: 300px;
+    height: 1000px;
+    
+    padding:0;
+    margin: 0;
+
+    position: fixed;
+    top: -84px;
+    left: -140px;
+    z-index :9;
+     
+    background-color: rgb(74, 60, 53);
+     
+    text-align: center;
+     
+    padding-top: 100px;
+     
+    transform: rotate(14deg);
+        -ms-transform: rotate(14deg); /* Ie*/
+        -moz-transform: rotate(14deg); /* firefox*/
+        -webkit-transform: rotate(14deg); /* safari & chrome*/
+        -o-transform: rotate(14deg); /* opera*/
+}
+
+ls-main{
+    width: 80%;
+    margin-left: 20%;
+}
+.ls-footer {
+    width: 100%;
+    padding: 5px 30px 5px 5px;
+    background-color: purple;
+    text-align: right;
+    color: white;
+}
+
+/*************************************************
+*   Widget
+/*************************************************/*
+
+.btn {
+    width: 300px;
+    height: auto;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background-color: #800080 ;
+    color: white;
+    
+    padding : 10px;
+}
+
+.realisations .btn {
+    margin-left: 20px;
+    margin-top: 20px; 
+}
+
+.formulaire .btn {
+    margin-left: 116px;
+    margin-top: 20px; 
+}
+
+
+/*************************************************
+*   modules
+/*************************************************/*
+/*----------------------------
+-------   NAV    ------------
+-----------------------------*/
+
+nav a{
+    width: 163.5px;
+    
+    display: block;
+    
+    margin-left: 45.5%;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    
+    background-color: #7E736E;
+    border: 1px solid #746B66;
+    
+    line-height: 2;
+    text-align: left;
+    color: #eee;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.logo{text-align: center;}
+
+.contact{
+    margin-left: 138px;
+    /*margin-top: 25%;*/
+    text-align: center;
+    background-color: #7E736E;
+}
+.contact h4{
+    margin-top: 20px;
+    /*margin-bottom: 10px;*/
+    /*padding-left: 10px;*/
+    padding: 5px 0px 0px 10px;
+    font-size: 1.2em;
+     
+    color: purple;
+    text-align: center;
+}
+.contact a { 
+    width: 22px;
+    
+    display: inline-block;
+    
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+
+    text-align: center;
+
+}
+
+/*----------------------------
+-------   MAIN    ------------
+-----------------------------*/
+main section{
+    background-color: #ddd2ce;
+
+    border: 1px #7E736E solid;
+    border-radius: 10px 10px 40px 10px;
+    
+    margin-bottom: 50px;
+    padding: 30px 30px 30px 30px;
+}
+main .box {
+    width: 80%;
+}
+main .box ul{
+    display: block;
+}
+main .box li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+hr {
+    background-color: purple;
+    height: 1px;
+}
+main .realisations {
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+.items {
+    border: 1px solid #333;
+    box-shadow: #4a3c35 10px 10px 10px;
+    margin: 20px 20px 20px 20px;
+
+}
+main .realisations img {
+    margin: 20px;
+    width: 44%;
+}
+main h2{
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.competences h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #800080;
+}
+
+.fiche-contac--label {
+    float: left;
+}
+.fiche-contact--input {
+    margin-left: 150px;
+}
+.formulaire {
+    width: 35%;
+    display: inline-block;
+    margin-right: 175px;
+    padding: 10px;
+}
+.formulaire label {
+    float: left;
+    margin-right: 3px;
+    width: 118px;
+}
+
+
+.about {
+    width: 40%;
+    display: inline-block;
+    border: 1px #800080 solid;
+    border-radius: 40px 0;
+    padding: 20px;
+    vertical-align: top;
+
+}
+.about img {
+    float: right;
+}
+
+
+
+/********************************
+*         State
+********************************/
+
+.btn:hover{
+        background-image: linear-gradient(#800080,#eeeeee);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
