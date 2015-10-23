@@ -110,12 +110,21 @@ a:hover {
   transition:transform .9s;
 }
 .ls-nav img:hover {
-    -webkit-transform:rotate(540deg); 
-      -moz-transform:rotate(540deg);
-      -o-transform:rotate(540deg); 
-      -ms-transform:rotate(540deg); 
-    transform:rotate(540deg);    
+    /*-webkit-transform:rotate(15deg); */
+    /*  -moz-transform:rotate(5deg);*/
+    /*  -o-transform:rotate(5deg); */
+    /*  -ms-transform:rotate(5deg); */
+    /*transform:rotate(15deg); */
+    transform-origin: 0 0;
+    transform: matrix(1.06, 1.84, 0.54, 2.8, 466px, 482px);
 }
+/*.ls-nav img:hover {*/
+/*    -webkit-transform:rotate(540deg); */
+/*      -moz-transform:rotate(540deg);*/
+/*      -o-transform:rotate(540deg); */
+/*      -ms-transform:rotate(540deg); */
+/*    transform:rotate(540deg);    */
+/*}*/
 
 .ls-footer {
     width: 100%;
