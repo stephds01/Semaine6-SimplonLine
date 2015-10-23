@@ -7,12 +7,13 @@
         
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css" type="text/css" />
+        <link href="bower_components/ihover/src/ihover.css" rel="stylesheet">
     </head>
     
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-xs-12">
                     
                     
                     <header class="ls-header">
@@ -24,7 +25,7 @@
                         </div>    
                     </header>
                     
-                    <nav class="ls-nav">
+                    <nav class="ls-nav notmobile">
                         <a href="#"><img src="images/logo-sdesa4.png" class="logo"/></a>
                         <a href="#formations">Formations</a>
                         <a href="#professionnelles">Expériences</a>
@@ -54,21 +55,17 @@
                                 
                                 <section class="slide">
                                     <a href="#"><img src="images/site_internet_web18_paris1.jpg"></img>
-                                    <p>Créeons ensemble votre indentité numérique de demain !</p></a>
+                                    <p>Créons ensemble votre indentité numérique de demain !</p></a>
                                 </section>
                                 <section id="formations" class="formations">
                                     <hr>
                                     <h2>Formations</h2>
                                         <ul>
                                             <li><span class="date">Depuis tourjours</span> Self made woman</li>
-                                            <li><span class="date">De Septembre 2014 à Septembre 2016</span> Intégrateur & Developpeur chez Emweb (Paris)</li>
-                                            <li><span class="date">De Octobre 2015 à Avril 2015</span> Developpeur Web chez simplonLine.co</li>
-                                            <li><span class="date">En 2014</span> Html 5 chez Codecademy</li>
-                                            <li><span class="date">En 2014</span> CSS 3 chez Codecademy</li>
-                                            <li><span class="date">En 2014</span> PHP chez Codecademy</li>
-                                            <li><span class="date">En 2014</span> Javascript chez Codecademy</li>
-                                            <li><span class="date">En 2015</span> Ruby chez Codecademy</li>
                                             <li><span class="date">Depuis Avril 2014</span> OpenClassRoom</li>
+                                            <li><span class="date">En 2014</span> Codecademy</li>
+                                            <li><span class="date">De Septembre 2014 à Septembre 2016</span> Intégrateur & Developpeur chez Emweb (Paris)</li>
+                                            <li><span class="date">De Octobre 2015 à Avril 2015</span> Developpeur Web et application mobile chez simplonLine.co</li>
                                         </ul>
                                 </section>
                                 
@@ -150,16 +147,49 @@
                                 <section id="realisations" class="realisations">
                                     <hr>
                                     <h2>Mes réalisations</h2>
-                                        <div class="row ">
-                                            <div class="col-md-12 ">
-                                                <a href="http://www.ecoute-emotionnelle-active.com" target=_blank class="itemsHove"><img class="items" src="images/realisation/creation-1.png"/></a>
-                                                <a href="http://www.kaydanrealestatepcc.com" target=_blank><img class="items" src="images/realisation/creation-2.png"/></a>
-                                                <a href="http://www.e-cigarette-electronic.com" target="_blank"><img class="items" src="images/realisation/creation-24.png"/></a>
-                                                <a href="http://zupimages.net/up/15/43/zqcj.png" target= "_blank"><img class="items" src="images/realisation/creation-23.png"/></a>
-                                            </div>
-                                        </div>
+                                    
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                     
+                                        <!-- normal -->
+                                        <div class="ih-item square effect4"><a href="#">
+                                            <div class="img"><img src="images/realisation/creation-1.png" target="_blank" alt="img" /></div>
+                                            <div class="mask1"></div>
+                                            <div class="mask2"></div>
+                                            <div class="info">
+                                              <h3>Site Internet</h3>
+                                              <p>Ce site est en ligne</p>
+                                            </div></a></div>
+                                        <!-- end normal -->
+                                     
+                                      </div>
+                                      <div class="col-sm-6">
+                                     
+                                        <!-- colored -->
+                                        <div class="ih-item square colored effect4"><a href="#">
+                                            <div class="img"><img src="images/realisation/creation-2.png" alt="img"></div>
+                                            <div class="mask1"></div>
+                                            <div class="mask2"></div>
+                                            <div class="info">
+                                              <h3>Heading here</h3>
+                                              <p>Description goes here</p>
+                                            </div></a></div>
+                                        <!-- end colored -->
+                                     
+                                      </div>
+                                    </div>
 
-                                    <a href="page_mes_realisations.html"><button class="btn btn btn-primary">Voir + de réalisations</button></a>
+
+                                    <!--    <div class="row ">-->
+                                    <!--        <div class="col-md-12 ">-->
+                                    <!--            <a href="http://www.ecoute-emotionnelle-active.com" target=_blank class="itemsHove"><img class="items" src="images/realisation/creation-1.png"/></a>-->
+                                    <!--            <a href="http://www.kaydanrealestatepcc.com" target=_blank><img class="items" src="images/realisation/creation-2.png"/></a>-->
+                                    <!--            <a href="http://www.e-cigarette-electronic.com" target="_blank"><img class="items" src="images/realisation/creation-24.png"/></a>-->
+                                    <!--            <a href="http://zupimages.net/up/15/43/zqcj.png" target= "_blank"><img class="items" src="images/realisation/creation-23.png"/></a>-->
+                                    <!--        </div>-->
+                                    <!--    </div>-->
+
+                                    <!--<a href="page_mes_realisations.html"><button class="btn btn btn-primary">Voir + de réalisations</button></a>-->
                                 </section>
                                 
                                 <section id="competences" class="competences">

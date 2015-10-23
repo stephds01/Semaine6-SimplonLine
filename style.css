@@ -102,11 +102,21 @@ a:hover {
         -webkit-transform: rotate(14deg); /* safari & chrome*/
         -o-transform: rotate(14deg); /* opera*/
 }
-
-ls-main{
-    width: 80%;
-    margin-left: 20%;
+.ls-nav img {
+    -webkit-transition:-webkit-transform .9s; /* Chrome Safari*/
+    -moz-transition:-moz-transform .9s;       /*// Mozilla*/
+    -o-transition:-o-transform .9s;          /* // Opéra*/
+    -ms-transition:-ms-transform .9s;        /* // IE*/
+  transition:transform .9s;
 }
+.ls-nav img:hover {
+    -webkit-transform:rotate(540deg); 
+      -moz-transform:rotate(540deg);
+      -o-transform:rotate(540deg); 
+      -ms-transform:rotate(540deg); 
+    transform:rotate(540deg);    
+}
+
 .ls-footer {
     width: 100%;
     padding: 5px 30px 5px 5px;
@@ -265,20 +275,14 @@ main .slide {
     padding-left: 200px;
 }
 
+
+.slide a{
+    cursor: none;
+}
 main .realisations {
     width: 100%;
     margin-bottom: 50px;
 
-}
-.items {
-    border: 1px solid #333;
-    box-shadow: #4a3c35 10px 10px 10px;
-    margin: 20px 20px 20px 20px;
-
-}
-main .realisations img {
-    margin: 20px;
-    width: 44%;
 }
 main h2{
     padding-bottom: 15px;
@@ -340,9 +344,14 @@ main h2{
 
 
 
+/************************************
+*  RESPONSIVE
+************************************/
 
 
-
+.notmobile{
+    display: none;
+}
 
 
 
