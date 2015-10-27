@@ -1,0 +1,106 @@
+/*************************
+    BASE
+*************************/
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+/*************************
+    LAYOUT
+*************************/
+header {
+    width: 100%;
+    border: 1px solid red;
+    ;
+}
+
+
+
+
+
+
+
+/*************************
+    MODULE
+*************************/
+.leaderBoard {
+    height: 400px;
+    /*width: 100%;*/
+    border:1px red solid;
+}
+.entertainment {
+    height: 200px;
+    width: 50%;
+    
+    border:1px green solid;
+}
+
+.sport {
+    height: 200px;
+    width: 50%;
+    
+    border:1px green solid;
+}
+
+
+
+.food {
+    height: 200px;
+    width: 50%;
+    
+    border:1px gray solid;
+}
+.general {
+    height: 200px;
+    width: 50%;
+    
+    border:1px gray solid;
+}
+.geography {
+    height: 400px;
+    width: 100%;
+    
+    border:1px green solid;
+}
+
+
+
+
+.history {
+    height: 200px;
+    width: 100%;
+    
+    border:1px green solid;
+}
+.science {
+    height: 200px;
+    width: 50%;
+    
+    border:1px green solid;
+}
+.tv {
+    height: 200px;
+    width: 50%;
+    
+    border:1px green solid;
+}
+.music {
+    height: 200px;
+    width: 50%;
+    
+    border:1px green solid;
+}
+.profile {
+    height: 200px;
+    width: 50%;
+    
+    border:1px green solid;
+}
+
+
+
