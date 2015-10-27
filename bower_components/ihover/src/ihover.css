@@ -62,8 +62,8 @@
 
 .ih-item.square {
   position: relative;
-  width: 316px;
-  height: 216px;
+  width: 450px;   /*@TODO Modif size*/
+  height: 250px;  /*@TODO Modif size*/
   border: 8px solid #fff;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -2692,7 +2692,7 @@
 }
 .ih-item.square.effect3 .info {
   height: 65px;
-  background: #333333;
+  background: #4A3C35;
   opacity: 0;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -2710,7 +2710,7 @@
   font-style: italic;
   font-size: 12px;
   position: relative;
-  color: #bbb;
+  /*color: #bbb;*/
   padding: 5px;
   text-align: center;
 }
@@ -2787,21 +2787,21 @@
   position: absolute;
   background: #333333;
   background: rgba(0, 0, 0, 0.6);
-  height: 361px;
-  width: 361px;
+  height: 492px;  /*@TODO Modif size*/
+  width: 492px;  /*@TODO Modif size*/
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 .ih-item.square.effect4 .mask1 {
   left: auto;
-  right: 0;
-  top: 0;
+  right: -68px; /*@TODO Modif size*/
+  top: 125px;  /*@TODO Modif size*/
   -webkit-transform: rotate(56.5deg) translateX(-180px);
   -moz-transform: rotate(56.5deg) translateX(-180px);
   -ms-transform: rotate(56.5deg) translateX(-180px);
   -o-transform: rotate(56.5deg) translateX(-180px);
-  transform: rotate(56.5deg) translateX(-180px);
+  transform: rotate(62.239deg) translateX(-139.55px);  /*@TODO Modif size*/
   -webkit-transform-origin: 100% 0%;
   -moz-transform-origin: 100% 0%;
   -ms-transform-origin: 100% 0%;
@@ -2810,13 +2810,13 @@
 }
 .ih-item.square.effect4 .mask2 {
   top: auto;
-  bottom: 0;
-  left: 0;
+  bottom: 126px;  /*@TODO Modif size*/
+  left: -63px;  /*@TODO Modif size*/
   -webkit-transform: rotate(56.5deg) translateX(180px);
   -moz-transform: rotate(56.5deg) translateX(180px);
   -ms-transform: rotate(56.5deg) translateX(180px);
   -o-transform: rotate(56.5deg) translateX(180px);
-  transform: rotate(56.5deg) translateX(180px);
+  transform: rotate(62.239deg) translateX(139px);  /*@TODO Modif size*/
   -webkit-transform-origin: 0% 100%;
   -moz-transform-origin: 0% 100%;
   -ms-transform-origin: 0% 100%;
@@ -2827,7 +2827,7 @@
   background: #111111;
   height: 0;
   visibility: hidden;
-  width: 361px;
+  width: 480px;  /*@TODO Modif size*/
   -webkit-transform: rotate(-33.5deg) translate(-112px, 166px);
   -moz-transform: rotate(-33.5deg) translate(-112px, 166px);
   -ms-transform: rotate(-33.5deg) translate(-112px, 166px);
@@ -2883,7 +2883,7 @@
   transform: rotate(56.5deg) translateX(-1px);
 }
 .ih-item.square.effect4 a:hover .info {
-  width: 300px;
+  width: 450px;  
   height: 120px;
   visibility: visible;
   top: 40px;
