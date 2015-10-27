@@ -8,15 +8,19 @@ body {
     
 }
 
+.clear {
+    clear: both;
+}
 
 
 /*************************
     LAYOUT
 *************************/
-header {
+.ls-header {
     width: 100%;
-    border: 1px solid red;
-    ;
+    background-color: #37bbd2;
+    border-bottom: 5px #414141 solid;
+
 }
 
 
@@ -28,22 +32,56 @@ header {
 /*************************
     MODULE
 *************************/
+.ls-header img {
+    display: inline-block;
+    width: 61px;
+    /*vertical-align: middle;*/
+    margin: 20px 10px;
+}
+.ls-header .titre {
+    display: inline-block;
+    vertical-align: middle;
+    width: 94%;
+}
+
+.ls-header h1 {
+    display: inline-block;
+}
+
+.ls-header p {
+    display: inline-block;
+    margin-left: 84%;
+
+    font-size: 36px;
+}
+
+
+
+
+
+
+
+
+
+/*-------------------
+    MAIN
+---------------------*/
 .leaderBoard {
     height: 400px;
-    /*width: 100%;*/
     border:1px red solid;
+    background-color: #f5f5f5;
 }
 .entertainment {
     height: 200px;
     width: 50%;
-    
+    background-color: #f9897d;
     border:1px green solid;
 }
 
 .sport {
     height: 200px;
     width: 50%;
-    
+    background-color: #b483ff;
     border:1px green solid;
 }
 
@@ -52,19 +90,19 @@ header {
 .food {
     height: 200px;
     width: 50%;
-    
+    background-color: #b7f6c9;
     border:1px gray solid;
 }
 .general {
     height: 200px;
     width: 50%;
-    
+    background-color: #fbff86;
     border:1px gray solid;
 }
 .geography {
     height: 400px;
     width: 100%;
-    
+    background-color: #fa8a7e;
     border:1px green solid;
 }
 
@@ -74,13 +112,13 @@ header {
 .history {
     height: 200px;
     width: 100%;
-    
+    background-color: #7efeff;
     border:1px green solid;
 }
 .science {
     height: 200px;
     width: 50%;
-    
+    background-color: #b7f6c9;
     border:1px green solid;
 }
 .tv {
