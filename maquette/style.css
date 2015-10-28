@@ -9,18 +9,27 @@ body {
     
 }
 
-.clear {
-    clear: both;
+/************Modification des marges de la grille Bootstrap****/
+.col-md-6 {
+    padding-left: 2px;
+    padding-right: 2px;
 }
-
-
+.col-md-4, col-lg-4 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.col-md-12, col-lg-12 {
+    padding-left: 2px;
+    padding-right: 2px;        
+}
 /*************************
     LAYOUT
 *************************/
 .ls-header {
     width: 100%;
     background-color: #37bbd2;
-    margin-bottom: 5px;
+    padding: 0;
+    margin: 0;
 }
 
 .ls-main {
@@ -41,7 +50,9 @@ body {
     vertical-align: middle;
     width: 94%;
 }
-
+.ls-header img {
+    padding: 10px;
+}
 .ls-header h1 {
     display: inline-block;
 }
@@ -53,10 +64,14 @@ body {
     font-size: 36px;
 }
 
-.leaderBoard img, {
-    margin-top: 15%;
-}
 
+/****************************
+   Box en dessous des blocs
+****************************/
+.lien {
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /*-------------------
     COMMUN
@@ -68,24 +83,44 @@ body {
 .box {
     position: relative;
     text-align: center;
+    padding: 0;
+    margin: 2px;
 
 
 }
 
-.box p {
+.box .lien {
     position: absolute;
     bottom: 0;
     left: 0;
     
     width: 100%;
     height: 50px;
-    background-color: #999999;
+    
     color: white;
     margin: 0;
-    
+    line-height: 3.5;
+    text-align: left;
 }
 
-.box img {
+.box .lien h6 {
+    padding-left: 10px;
+    line-height: 3;
+    text-transform: capitalize;
+}
+
+.box .lien p {
+    position: absolute;
+    right: 4%;
+    bottom: 0;
+    line-height: 2;
+
+}
+.entertainment img, .sport img, .food img, .general img, .history img,  .science img, .tv img, .music img, .profile img {
+    margin-top: 7%;
+}
+
+.leaderBoard img, .geography img {
     margin-top: 15%;
 }
 /*-------------------
@@ -95,35 +130,12 @@ body {
     width: 100%;
     height: 400px;
     background-color: #f5f5f5;
+    margin-bottom: 2px;
     
-    text-align: center;
 }
 .leaderBoard .lien{
     background-color: #999999;
-    display: inline-block;
 }
-
-.ls-main .lien {
-    text-align: left;
-}
-
-
-.lien p {
-    padding-left: 20px;
-    width: 150px;
-    vertical-align: middle;
-    display: inline-block;
-    border: 2px green solid;
-}
-
-.ls-main .lien p:child(2) {
-    /*padding-left: 80%;*/
-    color: red;
-    display: inline-block;
-        border: 2px red solid;
-
-}
-
 
 
 .entertainment {
@@ -131,7 +143,7 @@ body {
     height: 200px;
     background-color: #f9897d;
 }
-.entertainment p{
+.entertainment .lien{
     background-color: #f8504d;
 }
 
@@ -141,7 +153,7 @@ body {
     height: 200px;
     background-color: #b483ff;
 }
-.sport p{
+.sport .lien{
     background-color: #7f53c6;
 }
 
@@ -151,7 +163,7 @@ body {
     height: 200px;
     background-color: #b7f6c9;
 }
-.food p{
+.food .lien{
     background-color: #35eab5;
 }
 
@@ -161,7 +173,7 @@ body {
     height: 200px;
     background-color: #fbff86;
 }
-.general p{
+.general .lien{
     background-color: #fbed1a;
 }
 
@@ -172,7 +184,7 @@ body {
     height: 400px;
     background-color: #fa8a7e;
 }
-.geography p{
+.geography .lien{
     background-color: #f8504d;
 }
 
@@ -182,7 +194,8 @@ body {
     height: 200px;
     background-color: #7efeff;
 }
-.history p{
+
+.history .lien{
     background-color: #3ea8f6;
 }
 
@@ -192,7 +205,7 @@ body {
     height: 200px;
     background-color: #b7f6c9;
 }
-.science p{
+.science .lien{
     background-color: #35eab5;
 }
 
@@ -202,29 +215,26 @@ body {
     height: 200px;
     background-color: #b483ff;
 }
-.tv p{
+.tv .lien{
     background-color: #7f53c6;
 }
 
 
 .music {
     width: 100%;
-    height: 200px;
+    height: 196px;
     background-color: #7efeff;
 }
-.music p{
+.music .lien{
     background-color: #3ea8f6;
 }
 
 
 .profile {
     width: 100%;
-    height: 200px;
+    height: 196px;
     background-color: #f5f5f5;
 }
-.profile p{
+.profile .lien{
     background-color: #999999;
 }
-
-
-
