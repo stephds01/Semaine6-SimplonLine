@@ -8,7 +8,9 @@ body {
     background-color: #414141;
     
 }
-
+img {
+    vertical-align: text-bottom;
+}
 /************Modification des marges de la grille Bootstrap****/
 .col-md-6 {
     padding-left: 2px;
@@ -28,10 +30,31 @@ body {
 .ls-header {
     width: 100%;
     background-color: #37bbd2;
-    padding: 0;
-    margin: 0;
+    display: block;
 }
+.ls-header .titre{
+        width:100%;
+      display: inline-block;
+      border: 1px red solid;
+      vertical-align: baseline;
+}
+.ls-header .titre a{
+      display: inline-block;
 
+    line-height: 2;    
+}
+.ls-header .titre h1{
+      display: inline-block;
+    vertical-align: text-bottom;
+}
+.ls-header .titre p{
+      display: inline-block;
+      float: right;
+      line-height: 4;
+      margin-top: 10px;
+      margin-right: 30px;
+
+}
 .ls-main {
     margin: 0;
     padding: 0;
@@ -45,24 +68,7 @@ body {
 /*************************
     MODULE
 *************************/
-.ls-header .titre {
-    display: inline-block;
-    vertical-align: middle;
-    width: 94%;
-}
-.ls-header img {
-    padding: 10px;
-}
-.ls-header h1 {
-    display: inline-block;
-}
 
-.ls-header p {
-    display: inline-block;
-    margin-left: 84%;
-
-    font-size: 36px;
-}
 
 
 /****************************
@@ -72,6 +78,7 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
+
 
 /*-------------------
     COMMUN
@@ -85,8 +92,16 @@ body {
     text-align: center;
     padding: 0;
     margin: 2px;
+}
+.box a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
 
-
+.box a:hover {
+    display: block;
+    color: #333;
 }
 
 .box .lien {
