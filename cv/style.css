@@ -171,7 +171,9 @@ a:hover {
 /*----------------------------
 -------   NAV    ------------
 -----------------------------*/
-
+.ls-header h1 {
+    font-variant: small-caps;;
+}
 nav a{
     width: 163.5px;
     
@@ -191,8 +193,13 @@ nav a{
     font-size: 1.1em;
 }
 
-.logo{text-align: center;}
-
+.logo{
+    text-align: center;
+}
+.ls-nav .not {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
 .contact{
     margin-left: 138px;
     /*margin-top: 25%;*/
