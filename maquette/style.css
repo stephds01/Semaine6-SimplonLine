@@ -114,11 +114,11 @@ body {
     VIGNETTES
 ---------------------*/
 .big{
-    height: 58vh;
+    height: 59vh;
 }
 
 .little{
-    height: 29vh;
+    height: 29.5vh;
 }
 
 .leaderBoard {
@@ -134,8 +134,9 @@ body {
 
 .entertainment {
     width: 100%;
-    height: 29.5vh;
+    height: 30vh;
     background-color: #f9897d;
+
 }
 .entertainment .lien{
     background-color: #f8504d;
@@ -144,7 +145,7 @@ body {
 
 .sport {
     width: 100%;
-    height: 29.5vh;
+    height: 30vh;
     background-color: #b483ff;
 }
 .sport .lien{
@@ -174,7 +175,7 @@ body {
 .geography {
     width: 100%;
     background-color: #fa8a7e;
-    height: 58.5vh;
+    height: 59.5vh;
 
 }
 .geography .lien{
