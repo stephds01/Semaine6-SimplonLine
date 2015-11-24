@@ -8,9 +8,7 @@ body {
     background-color: #414141;
     
 }
-img {
-    vertical-align: text-bottom;
-}
+
 /************Modification des marges de la grille Bootstrap****/
 .col-md-6 {
     padding-left: 2px;
@@ -44,7 +42,7 @@ img {
     ******************************/
 .ls-header .logo {   
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: -44px;
 }    
 .ls-header .titre{
         width:100%;
@@ -115,9 +113,16 @@ img {
 /*-------------------
     VIGNETTES
 ---------------------*/
+.big{
+    height: 58vh;
+}
+
+.little{
+    height: 29vh;
+}
+
 .leaderBoard {
     width: 100%;
-    height: 400px;
     background-color: #f5f5f5;
     margin-bottom: 2px;
     
@@ -129,7 +134,7 @@ img {
 
 .entertainment {
     width: 100%;
-    height: 200px;
+    height: 29.5vh;
     background-color: #f9897d;
 }
 .entertainment .lien{
@@ -139,7 +144,7 @@ img {
 
 .sport {
     width: 100%;
-    height: 200px;
+    height: 29.5vh;
     background-color: #b483ff;
 }
 .sport .lien{
@@ -149,7 +154,6 @@ img {
 
 .food {
     width: 100%;
-    height: 200px;
     background-color: #b7f6c9;
 }
 .food .lien{
@@ -159,7 +163,6 @@ img {
 
 .general {
     width: 100%;
-    height: 200px;
     background-color: #fbff86;
 }
 .general .lien{
@@ -170,8 +173,9 @@ img {
 
 .geography {
     width: 100%;
-    height: 400px;
     background-color: #fa8a7e;
+    height: 58.5vh;
+
 }
 .geography .lien{
     background-color: #f8504d;
@@ -180,7 +184,6 @@ img {
 
 .history {
     width: 100%;
-    height: 200px;
     background-color: #7efeff;
 }
 
@@ -191,7 +194,6 @@ img {
 
 .science {
     width: 100%;
-    height: 200px;
     background-color: #b7f6c9;
 }
 .science .lien{
@@ -201,7 +203,6 @@ img {
 
 .tv {
     width: 100%;
-    height: 200px;
     background-color: #b483ff;
 }
 .tv .lien{
@@ -211,7 +212,6 @@ img {
 
 .music {
     width: 100%;
-    height: 196px;
     background-color: #7efeff;
 }
 .music .lien{
@@ -221,7 +221,6 @@ img {
 
 .profile {
     width: 100%;
-    height: 196px;
     background-color: #f5f5f5;
 }
 .profile .lien{
@@ -263,9 +262,9 @@ img {
 
 }
 .entertainment img, .sport img, .food img, .general img, .history img,  .science img, .tv img, .music img, .profile img {
-    margin-top: 7%;
+    margin-top: 8vh;
 }
 
 .leaderBoard img, .geography img {
-    margin-top: 15%;
+    margin-top: 16vh;
 }
