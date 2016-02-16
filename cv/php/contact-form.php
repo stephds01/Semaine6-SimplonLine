@@ -4,17 +4,27 @@ $errors = array();
 
 // Check if name has been entered
 if (!isset($_POST['name'])) {
-    $errors['name'] = 'Please enter your name';
+    $errors['name'] = 'Oups, Merci de saisir votre nom !';
+}
+
+// Check if lastname has been entered
+if (!isset($_POST['lastname'])) {
+    $errors['name'] = 'Oups, Merci de saisir votre prénom !';
+}
+
+// Check if lastname has been entered
+if (!isset($_POST['phone'])) {
+    $errors['phone'] = 'Oups, Merci de saisir votre numéro de téléphone !';
 }
 
 // Check if email has been entered and is valid
 if (!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    $errors['email'] = 'Please enter a valid email address';
+    $errors['email'] = 'Oups, Merci de saisir votre mail !';
 }
 
 //Check if message has been entered
 if (!isset($_POST['massage'])) {
-    $errors['message'] = 'Please enter your message';
+    $errors['message'] = 'Oups, Merci de saisir votre message !';
 }
 
 $errorOutput = '';
@@ -40,21 +50,25 @@ if(!empty($errors)){
 
 
 $name = $_POST['name'];
+$lastname = $_POST['lastname'];
+$re = "/[0-9]/";
+$str = "0675948525";
+
+$phone = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['massage'];
 $from = $email;
 $to = 'stephds01@gmail.com';  // please change this email id
-$subject = 'Contact Form : Boots4 - First Bootstrap 4 Website Template Ever In The World';
+$subject = 'Demande de renseignement : Formulaire de Contact CV de Stephanie DE SA';
 
-$body = "From: $name\n E-Mail: $email\n Message:\n $message";
-
+$body = "From: $name\n Prenom: $lastname\n $phone\n E-Mail: $email\n Message:\n $message";
 
 //send the email
 $result = '';
 if (mail ($to, $subject, $body)) {
     $result .= '<div class="alert alert-success alert-dismissible" role="alert">';
     $result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-    $result .= 'Thank You! I will be in touch';
+    $result .= 'Votre message est envoyé, je vous réponds très vite !';
     $result .= '</div>';
 
     echo $result;
@@ -64,7 +78,7 @@ if (mail ($to, $subject, $body)) {
 $result = '';
 $result .= '<div class="alert alert-danger alert-dismissible" role="alert">';
 $result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-$result .= 'Something bad happend during sending this message. Please try again later';
+$result .= 'Oups, il y a eu un petit soucis, réessayer un peu plus tard !';
 $result .= '</div>';
 
 echo $result;

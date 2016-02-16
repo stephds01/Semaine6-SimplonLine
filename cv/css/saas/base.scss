@@ -1,0 +1,71 @@
+/********************************
+*          Base
+********************************/
+html, body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  color: #333;
+
+  background-color: #371130;
+}
+h1 {
+  display: block;
+  font-size: 2.5em;
+  margin: 0;
+}
+h2 {
+  display: block;
+  font-size: 2.3em;
+  color: #371130;
+  margin: 0;
+}
+h3 {
+  display: block;
+  font-size: 1.8em;
+  margin: 0;
+}
+h4 {
+  display: block;
+  font-size: 1.3em;
+  margin: 0;
+  color: #4a3c35;
+
+}
+h5 {
+  display: block;
+  font-size: 1.1em;
+  margin: 0;
+
+}
+h6 {
+  display: block;
+  font-size: 1.1em;
+  margin: 0;
+
+}
+a {
+  color: red
+}
+a:hover {
+  color: #371130;
+  text-decoration: none;
+}
+.clear{clear: both}
+
+.date {
+  color: #371130
+}
+.orange {
+  color: orange;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.purple {
+  color:white;
+}

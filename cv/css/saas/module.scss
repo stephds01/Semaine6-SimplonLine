@@ -1,0 +1,460 @@
+
+/********************************
+*          layout
+********************************/
+.ls-header {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+
+    z-index: 1;
+    width: 100%;
+    
+    height:80px;
+
+    margin-bottom: 20px;
+    padding: 10px;
+    
+    
+    text-align: center;
+    
+    background-color: #371130;
+    color: #eee;
+}
+
+.ls-nav-container {
+    width: 300px;
+    height: 1014px;
+    
+    padding:100px 0 0 0;
+    margin: 0;
+
+    position: fixed;
+    top: -51px;
+    left: -145px;
+    z-index :9;
+
+    background-color: rgb(74, 60, 53);
+
+    text-align: center;
+
+    transform: rotate(10deg);
+        -ms-transform: rotate(10deg); /* Ie*/
+        -moz-transform: rotate(10deg); /* firefox*/
+        -webkit-transform: rotate(10deg); /* safari & chrome*/
+        -o-transform: rotate(10deg); /* opera*/
+
+
+}
+.ls-main {
+    background-color: #371130;
+
+    background:
+            linear-gradient(27deg, #150c14 5px, transparent 5px) 0 5px,
+            linear-gradient(207deg, #150c14 5px, transparent 5px) 10px 0px,
+            linear-gradient(27deg, #220f1d 5px, transparent 5px) 0px 10px,
+            linear-gradient(207deg, #220f1d 5px, transparent 5px) 10px 5px,
+            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #23051b;
+    background-size: 20px 20px;
+    /*width: 100%;*/
+}
+.toggle {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    color: white;
+    z-index: 99;
+
+    visibility: visible;
+
+}
+.ls-nav img {
+    -webkit-transition:-webkit-transform .9s; /* Chrome Safari*/
+    -moz-transition:-moz-transform .9s;       /*// Mozilla*/
+    -o-transition:-o-transform .9s;          /* // Opéra*/
+    -ms-transition:-ms-transform .9s;        /* // IE*/
+  transition:transform .9s;
+}
+.ls-nav img:hover {
+    /*-webkit-transform:rotate(15deg); */
+    /*  -moz-transform:rotate(5deg);*/
+    /*  -o-transform:rotate(5deg); */
+    /*  -ms-transform:rotate(5deg); */
+    /*transform:rotate(15deg); */
+}
+.activeNav {
+    background-color: #371130;
+}
+
+.ls-footer {
+    width: 101%;
+    padding: 5px 30px 5px 5px;
+    background-color: #371130;
+    text-align: right;
+    color: white;
+}
+
+/*************************************************
+*   Widget
+/*************************************************/
+
+.btn {
+    width: 300px;
+    height: auto;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background-color: #371130 ;
+    color: white;
+    
+    padding : 10px;
+}
+
+/*.realisations .btn {*/
+    /*margin-left: 20px;*/
+    /*margin-top: 20px; */
+/*}*/
+
+.formulaire .btn {
+    /*margin-left: 116px;*/
+    margin-top: 20px; 
+}
+
+
+/*************************************************
+*   modules
+/*************************************************/*
+/*----------------------------
+-------   NAV    ------------
+-----------------------------*/
+.ls-header h1 {
+    font-variant: small-caps;
+    font-size: 1.6em;
+}
+nav a{
+    width: 163.5px;
+    
+    display: block;
+    
+    margin-left: 45.5%;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    
+    background-color: #7E736E;
+    border: 1px solid #746B66;
+    
+    line-height: 2;
+    text-align: left;
+    color: #eee;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+a.activeNav {
+    color: white !important;
+}
+.logo{
+    text-align: center;
+}
+.ls-nav .not {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.contact{
+    margin-left: 138px;
+    /*margin-top: 25%;*/
+    text-align: center;
+    background-color: #7E736E;
+}
+.contact h4{
+    margin-top: 20px;
+    /*margin-bottom: 10px;*/
+    /*padding-left: 10px;*/
+    padding: 5px 0 0 10px;
+    font-size: 1.2em;
+     
+    color: #371130;
+    text-align: center;
+}
+.contact a {
+    width: 22px;
+    
+    display: inline-block;
+    
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+
+    text-align: center;
+
+}
+
+.gitHub, .linkedIn, .twitter, .skype, .mail {
+    color: rgb(74, 60, 53);
+}
+
+
+.twitter:hover {
+    color: #32CDFD;
+}
+
+.linkedIn:hover {
+    color:#006699;
+}
+.gitHub:hover {
+    color: #333;
+}
+
+.skype:hover {
+    color:#02B4EB;
+}
+
+.mail:hover {
+    color: #eee;
+}
+
+/****** menu responsive     ******/
+
+/*----------------------------
+-------   MAIN    ------------
+-----------------------------*/
+main section{
+    background-color: #ddd2ce;
+
+    border: 1px #7E736E solid;
+    border-radius: 10px 10px 40px 10px;
+    
+    margin-bottom: 50px;
+    padding: 30px 30px 30px 30px;
+}
+main .box {
+    width: 100%;
+}
+main .box ul{
+    display: block;
+}
+main .box li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+hr {
+    background-color: #371130;
+    height: 1px;
+}
+
+main .slide {
+    margin-top:100px;
+}
+
+.controls {
+    margin-bottom: 15px;
+}
+.slide img {
+    width: 100%;
+    position: relative;
+}
+.slide p {
+    position:relative;
+    top: -47px;
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: bold;
+    background-color: rgba(126, 115, 110, 0.8);
+    color: #4A3C35;
+}
+
+.slide p {
+    -webkit-transition-property: padding-left;
+				-webkit-transition-duration: 1s;
+				-webkit-transition-timing-function: ease-in;
+				
+				/* Bientôt supporté par Firefox */
+        -moz-transition-property: padding-left;
+				-moz-transition-duration: 1s;
+				-moz-transition-timing-function: ease-in;
+				
+				/* … et lorsque ce sera standardisé */
+				transition-property: padding-left;
+				transition-duration: 1s;
+				transition-timing-function: ease-in;
+    
+}
+.slide p:hover {
+    color: #371130;
+    padding-left: 200px;
+}
+
+
+.slide a{
+    cursor: none;
+}
+main .realisations {
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+main h2{
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+.realisationItems{
+    margin-bottom: 20px;
+}
+.competences h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #371130;
+}
+
+.box-form {
+    display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+.formContainer {
+    width:50%;
+}
+.ih-item.square{
+    width: 100%;
+    height: 100%;
+}
+.fiche-contact--input {
+    margin-left: 150px;
+}
+.formulaire {
+    width: 35%;
+    display: inline-block;
+    margin-right: 175px;
+    padding: 10px;
+}
+.formulaire label {
+    float: left;
+    margin-right: 3px;
+    width: 118px;
+}
+
+.soumettre {
+    margin-top: 20px;
+    width: 100%;
+}
+.about {
+    width: 46%;
+    display: inline-block;
+    border: 1px #371130 solid;
+    border-radius: 40px 0;
+    padding: 20px;
+    vertical-align: top;
+
+}
+.about img {
+    float: right;
+}
+
+.signature {
+    text-align: center;
+    /*font-weight: bold;*/
+    font-size: 1.5em;
+    
+}
+
+/********************************
+*         State
+********************************/
+
+.btn:hover{
+        background-image: linear-gradient(#371130,#eeeeee);
+}
+
+.navOn {
+    visibility: visible;
+}
+
+.navOff {
+    visibility: hidden;
+}
+
+
+
+/* barre de progression  */
+
+.box div {
+    display: inline-block;
+    margin-right: 10px;
+}
+.img_competence, .barre {
+    display: inline-block;
+    width: 40px;
+    margin-bottom: 10px;
+}
+.barre {
+    width: 200px;
+    background: grey;
+    border: 2px solid grey;
+    position: relative;
+    height: 10px;
+}
+
+.barre + .barre {
+    margin-top: 10px;
+}
+
+.barre:after {
+    content: "";
+    position: absolute;
+    background: rgb(107, 26, 89);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+}
+
+.barre[data-length="10"]:after { width: 10% }
+.barre[data-length="20"]:after { width: 20% }
+.barre[data-length="30"]:after { width: 30% }
+.barre[data-length="40"]:after { width: 40% }
+.barre[data-length="50"]:after { width: 50% }
+.barre[data-length="60"]:after { width: 60% }
+.barre[data-length="70"]:after { width: 70% }
+.barre[data-length="80"]:after { width: 80% }
+.barre[data-length="90"]:after { width: 90% }
+.barre[data-length="100"]:after { width: 100% }
+/********************************
+*         MixitUp
+********************************/
+
+#realisations .active {
+    background-color: rgb(74, 60, 53);
+    height: auto;
+    padding: 5px;
+    color: white;
+}
+
+#Container .mix{
+    display: none;
+    margin-left: 2%;
+    margin-bottom: 2%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
